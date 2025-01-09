@@ -87,7 +87,7 @@ class Process;
 /// - _r_debug.r_state is set to RT_ADD and the debugger notification
 ///   function is called notifying the debugger that shared libraries are
 ///   about to be added, but are not yet ready for use.
-/// - Once the the shared libraries are fully loaded, _r_debug.r_state is set
+/// - Once the shared libraries are fully loaded, _r_debug.r_state is set
 ///   to RT_CONSISTENT and the debugger notification function is called again
 ///   notifying the debugger that shared libraries are ready for use.
 ///   DYLDRendezvous must remember that the previous state was RT_ADD when it
@@ -98,7 +98,7 @@ class Process;
 /// - _r_debug.r_state is set to RT_DELETE and the debugger notification
 ///   function is called notifying the debugger that shared libraries are
 ///   about to be removed.
-/// - Once the the shared libraries are removed _r_debug.r_state is set to
+/// - Once the shared libraries are removed _r_debug.r_state is set to
 ///   RT_CONSISTENT and the debugger notification function is called again
 ///   notifying the debugger that shared libraries have been removed.
 ///   DYLDRendezvous must remember that the previous state was RT_DELETE when
