@@ -1004,12 +1004,12 @@ template <typename HandlerT> void visitErrors(const Error &E, HandlerT H) {
 /// Handle any errors (if present) in an Expected<T>, then try a recovery path.
 ///
 /// If the incoming value is a success value it is returned unmodified. If it
-/// is a failure value then it the contained error is passed to handleErrors.
+/// is a failure value then the contained error is passed to handleErrors.
 /// If handleErrors is able to handle the error then the RecoveryPath functor
 /// is called to supply the final result. If handleErrors is not able to
 /// handle all errors then the unhandled errors are returned.
 ///
-/// This utility enables the follow pattern:
+/// This utility enables the following pattern:
 ///
 ///   @code{.cpp}
 ///   enum FooStrategy { Aggressive, Conservative };
@@ -1020,7 +1020,7 @@ template <typename HandlerT> void visitErrors(const Error &E, HandlerT H) {
 ///       foo(Aggressive),
 ///       []() { return foo(Conservative); },
 ///       [](AggressiveStrategyError&) {
-///         // Implicitly conusme this - we'll recover by using a conservative
+///         // Implicitly consume this - we'll recover by using a conservative
 ///         // strategy.
 ///       });
 ///

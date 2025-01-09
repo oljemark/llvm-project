@@ -69,7 +69,7 @@ public:
 
   /// \returns the size of a OutlinedHashTree by traversing it. If
   /// \p GetTerminalCountOnly is true, it only counts the terminal nodes
-  /// (meaning it returns the the number of hash sequences in the
+  /// (meaning it returns the number of hash sequences in the
   /// OutlinedHashTree).
   size_t size(bool GetTerminalCountOnly = false) const;
 

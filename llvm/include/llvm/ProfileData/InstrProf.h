@@ -244,7 +244,7 @@ StringRef getFuncNameWithoutPrefix(StringRef PGOFuncName,
 /// virtual tables) \c NameStrs, the method generates a combined string \c
 /// Result that is ready to be serialized.  The \c Result string is comprised of
 /// three fields: The first field is the length of the uncompressed strings, and
-/// the the second field is the length of the zlib-compressed string. Both
+/// the second field is the length of the zlib-compressed string. Both
 /// fields are encoded in ULEB128.  If \c doCompress is false, the
 ///  third field is the uncompressed strings; otherwise it is the
 /// compressed string. When the string compression is off, the

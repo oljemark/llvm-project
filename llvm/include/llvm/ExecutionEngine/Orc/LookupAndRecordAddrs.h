@@ -27,7 +27,7 @@ namespace orc {
 
 /// Record addresses of the given symbols in the given ExecutorAddrs.
 ///
-/// Useful for making permanent records of symbol addreses to call or
+/// Useful for making permanent records of symbol addresses to call or
 /// access in the executor (e.g. runtime support functions in Platform
 /// subclasses).
 ///

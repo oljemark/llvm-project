@@ -80,7 +80,7 @@ public:
 
   /// Total order comparison. If both FunctionId are StringRef, this is the same
   /// as StringRef::compare. If one of them is StringRef, it is considered
-  /// greater than the hash code FunctionId. Otherwise this is the the same
+  /// greater than the hash code FunctionId. Otherwise this is the same
   /// as comparing their int values.
   int compare(const FunctionId &Other) const {
     auto Res = compareMemory(

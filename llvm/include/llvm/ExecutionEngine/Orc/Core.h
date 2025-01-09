@@ -554,7 +554,7 @@ private:
   SymbolNameVector Symbols;
 };
 
-/// A set of symbols and the their dependencies. Used to describe dependencies
+/// A set of symbols and their dependencies. Used to describe dependencies
 /// for the MaterializationResponsibility::notifyEmitted operation.
 struct SymbolDependenceGroup {
   SymbolNameSet Symbols;

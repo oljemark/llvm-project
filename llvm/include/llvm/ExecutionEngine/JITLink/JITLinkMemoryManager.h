@@ -207,7 +207,7 @@ public:
 /// BasicLayout groups Sections into Segments based on their memory protection
 /// and deallocation policies. JITLinkMemoryManagers can construct a BasicLayout
 /// from a Graph, and then assign working memory and addresses to each of the
-/// Segments. These addreses will be mapped back onto the Graph blocks in
+/// Segments. These addresses will be mapped back onto the Graph blocks in
 /// the apply method.
 class BasicLayout {
 public:

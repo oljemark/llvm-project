@@ -1196,7 +1196,7 @@ public:
   /// offset should be greater than zero, and the final offset less than
   /// B.getSize() - 1.
   ///
-  /// The resulting seqeunce of blocks will start with the original block B
+  /// The resulting sequence of blocks will start with the original block B
   /// (truncated to end at the first split offset) followed by newly introduced
   /// blocks starting at the subsequent split points.
   ///

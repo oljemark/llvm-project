@@ -500,7 +500,7 @@ public:
   /// Determine whether the no signed wrap flag is set.
   bool hasNoSignedWrap() const LLVM_READONLY;
 
-  /// Determine whether the the nneg flag is set.
+  /// Determine whether the nneg flag is set.
   bool hasNonNeg() const LLVM_READONLY;
 
   /// Return true if this operator has flags which may cause this instruction

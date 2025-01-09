@@ -123,7 +123,7 @@
 ///      __msan_metadata_ptr_for_load_n(ptr, size)
 ///      __msan_metadata_ptr_for_store_n(ptr, size);
 ///    Note that the sanitizer code has to deal with how shadow/origin pairs
-///    returned by the these functions are represented in different ABIs. In
+///    returned by these functions are represented in different ABIs. In
 ///    the X86_64 ABI they are returned in RDX:RAX, in PowerPC64 they are
 ///    returned in r3 and r4, and in the SystemZ ABI they are written to memory
 ///    pointed to by a hidden parameter.

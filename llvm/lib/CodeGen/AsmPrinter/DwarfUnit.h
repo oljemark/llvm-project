@@ -101,7 +101,7 @@ public:
   unsigned getUniqueID() const { return UniqueID; }
   // Accessors.
   AsmPrinter* getAsmPrinter() const { return Asm; }
-  /// Get the the symbol for start of the section for this unit.
+  /// Get the symbol for start of the section for this unit.
   MCSymbol *getLabelBegin() const {
     assert(LabelBegin && "LabelBegin is not initialized");
     return LabelBegin;

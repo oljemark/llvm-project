@@ -49,7 +49,7 @@ public:
   /// Returns reference to array of InstrProfValueData for the given
   /// instruction \p I.
   ///
-  /// The \p TotalCount and \p NumCandidates are set to the the total profile
+  /// The \p TotalCount and \p NumCandidates are set to the total profile
   /// count of the indirect call \p I and the number of profitable candidates
   /// in the given array (which is sorted in reverse order of profitability).
   ///

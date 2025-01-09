@@ -102,10 +102,10 @@ private:
   /// A CFG hash code used to identify a function code changes.
   uint64_t FunctionHash;
 
-  /// Map basic blocks to the their pseudo probe ids.
+  /// Map basic blocks to their pseudo probe ids.
   BlockIdMap BlockProbeIds;
 
-  /// Map indirect calls to the their pseudo probe ids.
+  /// Map indirect calls to their pseudo probe ids.
   InstructionIdMap CallProbeIds;
 
   /// The ID of the last probe, Can be used to number a new probe.

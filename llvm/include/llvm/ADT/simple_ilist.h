@@ -198,7 +198,7 @@ public:
   /// Remove a node by iterator; never deletes.
   ///
   /// \see \a remove() for removing by reference.
-  /// \see \a eraseAndDispose() it the node should be deleted.
+  /// \see \a eraseAndDispose() if the node should be deleted.
   iterator erase(iterator I) {
     assert(I != end() && "Cannot remove end of list!");
     remove(*I++);

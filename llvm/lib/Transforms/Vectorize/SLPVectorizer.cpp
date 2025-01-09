@@ -14104,7 +14104,7 @@ class BoUpSLP::ShuffleInstructionBuilder final : public BaseShuffleAnalysis {
     Value *createPoison(Type *Ty, unsigned VF) {
       return PoisonValue::get(getWidenedType(Ty, VF));
     }
-    /// Resizes 2 input vector to match the sizes, if the they are not equal
+    /// Resizes 2 input vector to match the sizes, if they are not equal
     /// yet. The smallest vector is resized to the size of the larger vector.
     void resizeToMatch(Value *&V1, Value *&V2) {
       if (V1->getType() == V2->getType())

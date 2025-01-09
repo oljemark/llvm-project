@@ -54,7 +54,7 @@ namespace llvm {
   class SCEVConstant;
   class raw_ostream;
 
-  /// Dependence - This class represents a dependence between two memory
+  /// Dependence - This class represents a dependence between two
   /// memory references in a function. It contains minimal information and
   /// is used in the very common situation where the compiler is unable to
   /// determine anything beyond the existence of a dependence; that is, it
@@ -67,7 +67,7 @@ namespace llvm {
   /// the set of predecessor edges for its destination instruction and a set
   /// if successor edges for its source instruction. These sets are represented
   /// as singly-linked lists, with the "next" fields stored in the dependence
-  /// itelf.
+  /// itself.
   class Dependence {
   protected:
     Dependence(Dependence &&) = default;
@@ -498,7 +498,7 @@ namespace llvm {
     ///    SrcLevels - innermost loop containing Src but not Dst
     ///          ... - loops containing Dst but not Src
     ///    MaxLevels - innermost loop containing Dst but not Src
-    /// Consider the follow code fragment:
+    /// Consider the following code fragment:
     ///    for (a = ...) {
     ///      for (b = ...) {
     ///        for (c = ...) {

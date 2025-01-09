@@ -97,7 +97,7 @@ Pass *callDefaultCtor() {
 /// that a Pass is available for use, and registers it into the internal
 /// database maintained by the PassManager.  Unless this template is used, opt,
 /// for example will not be able to see the pass and attempts to create the pass
-/// will fail. This template is used in the follow manner (at global scope, in
+/// will fail. This template is used in the following manner (at global scope, in
 /// your .cpp file):
 ///
 /// static RegisterPass<YourPassClassName> tmp("passopt", "My Pass Name");

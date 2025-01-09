@@ -122,7 +122,7 @@ public:
 
   /// isEqual - Returns true if two lists are equal.  Because all lists created
   ///  from the same ImmutableListFactory are uniqued, this has O(1) complexity
-  ///  because it the contents of the list do not need to be compared.  Note
+  ///  because the contents of the list do not need to be compared.  Note
   ///  that you should only compare two lists created from the same
   ///  ImmutableListFactory.
   bool isEqual(const ImmutableList& L) const { return X == L.X; }
