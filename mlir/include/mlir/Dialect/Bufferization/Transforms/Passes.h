@@ -77,7 +77,7 @@ void populateBufferizationDeallocLoweringPattern(
 ///     represent the condition under which the memref at the corresponding
 ///     position in A should be deallocated.
 ///   * The fifth argument E is used to pass results to the caller. It
-///     provides the ownership value corresponding the the memref at the same
+///     provides the ownership value corresponding to the memref at the same
 ///     position in B
 ///
 /// This helper function is supposed to be called once for each
